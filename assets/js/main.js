@@ -119,5 +119,22 @@
             }
          }
       });
+
+      // menu close on click elsewhere
+      $(document).on('click', function (e) {
+         var mobileNav = $('nav.mobile-nav');
+         var button = $('.menu-icon');
+         if (
+            !$(e.target).closest(mobileNav).length &&
+            !$(e.target).closest(button).length &&
+            mobileNav.is(':visible')
+         ) {
+            mobileNav.slideUp(200);
+            button.children('div').first().css('width', '30px');
+            button.children('div').eq(1).css('width', '15px');
+            button.children('div').eq(2).css('width', '20px');
+            shown = false;
+         }
+      });
    });
 })(jQuery);
