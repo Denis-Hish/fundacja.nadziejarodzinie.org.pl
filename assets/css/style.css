@@ -522,7 +522,7 @@ nav.desktop-nav ul.first-level > li > ul.second-level > li > a:hover {
 /*mobile nav*/
 nav.mobile-nav {
    width: 90vw;
-   height: 70vh;
+   height: 500%;
    background-color: rgba(96, 96, 110, 0.97);
    border-radius: 30px;
    position: absolute;
@@ -750,10 +750,11 @@ footer.main-footer nav.footer-nav ul li a {
 /* ##### 02 : SITE HEROS  ##### */
 /*site hero 1 */
 .site-hero {
-   /* height: 850px; */
-   height: 100vh;
+   height: 850px;
+   /* height: 100vh; */
    width: 100%;
-   background: url('../img/mountainous.png') no-repeat;
+   /* background: url('../img/mountainous.png') no-repeat; */
+   background: url('../img/hero-img.png') no-repeat;
    background-size: cover;
    background-position: center;
    position: relative;
@@ -810,7 +811,7 @@ footer.main-footer nav.footer-nav ul li a {
 
 /*site hero 2 */
 .site-hero_2 {
-   background: url('../img/mountainous.png') no-repeat;
+   background: url('../img/hero-img.png') no-repeat;
    background-position: center;
    background-size: cover;
    height: 500px;
@@ -1658,7 +1659,8 @@ footer.main-footer nav.footer-nav ul li a {
    display: flex;
    justify-content: center;
    align-items: center;
-   margin: 0 0 50px;
+   /* margin: 0 0 50px; */
+   margin: 0 10px 50px;
 }
 
 .pagination a {
