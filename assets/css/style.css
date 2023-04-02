@@ -179,6 +179,7 @@ ul.social-icons li a:hover {
 }
 .section-title span {
    position: relative;
+   width: 90%;
    z-index: 1;
    font-family: 'Montserrat', sans-serif;
    font-weight: 700;
@@ -1476,6 +1477,10 @@ footer.main-footer nav.footer-nav ul li a {
    width: 100%;
 }
 
+.post-title {
+   font-size: 20px;
+}
+
 /*sidebar*/
 @media (max-width: 991px) {
    .sidebar {
@@ -1844,6 +1849,10 @@ footer.main-footer nav.footer-nav ul li a {
    display: grid;
    align-items: center;
    gap: 20px;
+}
+
+.hydrated {
+   overflow-x: hidden;
 }
 
 /*----------------------------------------*/
