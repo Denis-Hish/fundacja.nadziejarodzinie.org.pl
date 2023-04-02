@@ -75,7 +75,6 @@ section {
 }
 img {
    width: 100%;
-   margin: 15px;
 }
 
 /*blockquote*/
@@ -186,7 +185,6 @@ ul.social-icons li a:hover {
    font-size: 30px;
    text-transform: uppercase;
    color: var(--color1);
-   position: relative;
    display: inline-block;
    margin-bottom: 20px;
 }
@@ -1763,39 +1761,4 @@ footer.main-footer nav.footer-nav ul li a {
 #button-up.show {
    opacity: 1;
    visibility: visible;
-}
-
-/* TEST */
-.section-title-test {
-   display: grid;
-   align-items: center;
-   gap: 50px;
-   grid-template-columns: 42% auto;
-   margin-bottom: 100px;
-}
-
-.odd-even div:nth-child(odd) {
-   order: 1;
-   background-color: yellowgreen;
-}
-
-.odd-even div:nth-child(even) {
-   order: 2;
-   background-color: violet;
-}
-
-.section-title-image-test {
-   /* order: 1; */
-   width: 100%;
-   /* padding: 0 20px; */
-}
-
-.section-title-image-test img {
-   margin: 0;
-   padding: 0;
-}
-
-.section-title-text-test {
-   /* order: 2; */
-   text-align: left;
 }
