@@ -179,7 +179,7 @@ ul.social-icons li a:hover {
 }
 .section-title span {
    position: relative;
-   width: 90%;
+   width: 80%;
    z-index: 1;
    font-family: 'Montserrat', sans-serif;
    font-weight: 700;
@@ -188,6 +188,7 @@ ul.social-icons li a:hover {
    color: var(--color1);
    display: inline-block;
    margin-bottom: 20px;
+   text-align: left;
 }
 .section-title span:after {
    content: '';
@@ -256,7 +257,7 @@ ul.social-icons li a:hover {
       margin: 0 auto 50px;
    }
    .section-title span:after {
-      left: 50%;
+      left: 30px;
       -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
       transform: translateX(-50%);
@@ -1851,8 +1852,8 @@ footer.main-footer nav.footer-nav ul li a {
    gap: 20px;
 }
 
-.hydrated {
+/* html {
    overflow-x: hidden;
-}
+} */
 
 /*----------------------------------------*/
