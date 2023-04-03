@@ -764,8 +764,8 @@ footer.main-footer nav.footer-nav ul li a {
 /* ##### 02 : SITE HEROS  ##### */
 /*site hero 1 */
 .site-hero {
-   /* height: 850px; */
-   height: 100vh;
+   height: 750px;
+   /* height: 100vh; */
    width: 100%;
    /* background: url('../img/mountainous.png') no-repeat; */
    background: url('../img/hero-img.png') no-repeat;
@@ -821,6 +821,9 @@ footer.main-footer nav.footer-nav ul li a {
 .site-hero p {
    width: 50%;
    margin: 0 auto;
+   vertical-align: middle;
+   font-size: 18px;
+   height: 150px;
 }
 
 /*site hero 2 */
@@ -1682,7 +1685,6 @@ footer.main-footer nav.footer-nav ul li a {
    display: flex;
    justify-content: center;
    align-items: center;
-   /* margin: 0 0 50px; */
    margin: 0 10px 50px;
 }
 
@@ -1698,13 +1700,17 @@ footer.main-footer nav.footer-nav ul li a {
 }
 
 .pagination a.active {
-   background-color: #009846;
+   background-color: var(--color1);
    color: white;
    border: 1px solid #a9acd1;
 }
 
 .pagination a:hover:not(.active) {
    background-color: #a9acd1;
+}
+
+.pagination a:active:not(.active) {
+   background-color: var(--color3);
 }
 
 /* POST SECTION */
@@ -1773,7 +1779,6 @@ footer.main-footer nav.footer-nav ul li a {
 /*------------odd-even-------------*/
 
 .t-container {
-   /* background-color: yellow; */
    display: flex;
    flex-direction: row;
    align-items: center;
@@ -1797,7 +1802,6 @@ footer.main-footer nav.footer-nav ul li a {
 }
 
 .t-text {
-   /* background-color: violet; */
    order: 1;
    margin-left: 20px;
 }
@@ -1811,7 +1815,6 @@ footer.main-footer nav.footer-nav ul li a {
 }
 
 .t-title {
-   /* background-color: yellowgreen; */
    font-size: 30px;
 }
 
