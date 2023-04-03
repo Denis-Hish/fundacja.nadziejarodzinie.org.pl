@@ -197,7 +197,12 @@
    <!-----------------------odd-even-end-------------------------->
 
    <section class="services mt-100 no-mb">
+
+
+
+
       <div class="contact-wrapper">
+
          <div class="container contact wow fadeInUp">
             <div class="col2-small">
                <a href="https://goo.gl/maps/AF4rcuHXgF7iRZ2H8" target="_blank" rel="noopener noreferrer">
@@ -251,73 +256,75 @@
 
             </div>
          </div>
-      </div>
 
-      <div class="copyright-bgc">
-         <div class="container">
-            <div class="copyright wow fadeInUp">
-               © <span class="current-year">2017</span> Fundacja Nadzieja Rodzinie<br>
-               <a href="assets/resource/Obowiazek_informacyjny.pdf" target="_blank">Obowiązek informacyjny</a>
-            </div>
+      </div>
+   </section>
+
+   <div class="copyright-bgc">
+      <div class="container">
+         <div class="copyright wow fadeInUp">
+            © <span class="current-year">2023</span> Fundacja Nadzieja Rodzinie<br>
+            <a href="assets/resource/Obowiazek_informacyjny.pdf" target="_blank">Obowiązek informacyjny</a>
          </div>
       </div>
+   </div>
 
-      <!-- UP BUTTON -->
-      <a id="button-up"></a>
+   <!-- UP BUTTON -->
+   <a id="button-up"></a>
 
-      <!-- SCRIPTS -->
-      <script type="text/javascript" src="assets/js/jquery-2.1.4.min.js"></script>
-      <script type="text/javascript" src="assets/js/isotope.pkgd.min.js"></script>
-      <script type="text/javascript" src="assets/js/jquery.flexslider.js"></script>
-      <!-- <script type="text/javascript" src="assets/js/smoothScroll.js"></script> -->
-      <script type="text/javascript" src="assets/js/jquery.animsition.min.js"></script>
-      <script type="text/javascript" src="assets/js/wow.min.js"></script>
-      <script type="text/javascript" src="assets/js/main.js"></script>
+   <!-- SCRIPTS -->
+   <script type="text/javascript" src="assets/js/jquery-2.1.4.min.js"></script>
+   <script type="text/javascript" src="assets/js/isotope.pkgd.min.js"></script>
+   <script type="text/javascript" src="assets/js/jquery.flexslider.js"></script>
+   <!-- <script type="text/javascript" src="assets/js/smoothScroll.js"></script> -->
+   <script type="text/javascript" src="assets/js/jquery.animsition.min.js"></script>
+   <script type="text/javascript" src="assets/js/wow.min.js"></script>
+   <script type="text/javascript" src="assets/js/main.js"></script>
 
-      <script type="text/javascript" charset="utf-8">
-         $(window).load(function () {
-            new WOW().init();
+   <script type="text/javascript" charset="utf-8">
+      $(window).load(function () {
+         new WOW().init();
 
-            // initialise flexslider
-            $('.site-hero').flexslider({
-               animation: "fade",
-               directionNav: false,
-               controlNav: false,
-               keyboardNav: true,
-               slideToStart: 0,
-               animationLoop: true,
-               pauseOnHover: false,
-               slideshowSpeed: 4000,
-            });
-
-
-            // initialize isotope
-            var $container = $('.portfolio_container');
-            $container.isotope({
-               filter: '*',
-            });
-
-            $('.portfolio_filter a').click(function () {
-               $('.portfolio_filter .active').removeClass('active');
-               $(this).addClass('active');
-
-               var selector = $(this).attr('data-filter');
-               $container.isotope({
-                  filter: selector,
-                  animationOptions: {
-                     duration: 500,
-                     animationEngine: "jquery"
-                  }
-               });
-               return false;
-            });
+         // initialise flexslider
+         $('.site-hero').flexslider({
+            animation: "fade",
+            directionNav: false,
+            controlNav: false,
+            keyboardNav: true,
+            slideToStart: 0,
+            animationLoop: true,
+            pauseOnHover: false,
+            slideshowSpeed: 4000,
          });
-      </script>
 
-      <script src="assets/js/script.js"></script>
-      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-      <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-      <script src="assets/js/button-up.js"></script>
+
+         // initialize isotope
+         var $container = $('.portfolio_container');
+         $container.isotope({
+            filter: '*',
+         });
+
+         $('.portfolio_filter a').click(function () {
+            $('.portfolio_filter .active').removeClass('active');
+            $(this).addClass('active');
+
+            var selector = $(this).attr('data-filter');
+            $container.isotope({
+               filter: selector,
+               animationOptions: {
+                  duration: 500,
+                  animationEngine: "jquery"
+               }
+            });
+            return false;
+         });
+      });
+   </script>
+
+   <script src="assets/js/script.js"></script>
+   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+   <script src="assets/js/button-up.js"></script>
 
 </body>
 
