@@ -6,6 +6,9 @@
    --color5: #60606e; /* text-color */
    --color6: #f1e9db;
    --color7: #ccd64a;
+   --color8: #a9acd1;
+   --color9: #dee2e6;
+   --color10: rgba(222, 226, 230, 0.7);
    --color-text-1: #444;
    --color-text-2: #07020d;
    --color-text-3: #f1e9db;
@@ -62,7 +65,7 @@ blockquote.bq {
 
 /*links*/
 a {
-   color: #5359a3;
+   color: var(--color1);
    -webkit-transition: all 0.2s ease-in-out;
    transition: all 0.2s ease-in-out;
 }
@@ -566,8 +569,9 @@ header.main-header .menu-icon .line:last-child {
 
 /*contact*/
 .contact-wrapper {
-   background-color: #dee2e6;
+   background-color: var(--color9);
    padding-top: 30px;
+   box-shadow: 0 -1px 10px var(--color5);
 }
 
 .contact-container,
@@ -702,7 +706,7 @@ footer.main-footer nav.footer-nav ul li:first-child {
 }
 footer.main-footer nav.footer-nav ul li a {
    text-transform: uppercase;
-   color: #5359a3;
+   color: var(--color1);
    font-size: 14px;
    font-weight: 700;
 }
@@ -737,7 +741,8 @@ footer.main-footer nav.footer-nav ul li a {
 }
 
 .copyright-bgc {
-   background-color: #a9acd1;
+   background-color: rgba(169, 172, 209, 0.7);
+   box-shadow: 0 -1px 10px var(--color5);
 }
 
 /* ##### 02 : SITE HEROS  ##### */
@@ -746,7 +751,6 @@ footer.main-footer nav.footer-nav ul li a {
    height: 750px;
    /* height: 100vh; */
    width: 100%;
-   /* background: url('../img/mountainous.png') no-repeat; */
    background: url('../img/hero-img.png') no-repeat;
    background-size: cover;
    background-position: center;
@@ -1632,14 +1636,12 @@ footer.main-footer nav.footer-nav ul li a {
 }
 
 .announcements-container-card-btn:hover {
-   /* background-color: #a9acd1; */
    transform: translateY(-1px);
    box-shadow: 0 2px 5px #444554;
    border: 2px solid var(--color1);
 }
 
 .announcements-container-card-btn:active {
-   /* background-color: #a9acd1; */
    transform: translateY(0px);
    box-shadow: 0 0px 0px #444554;
 }
@@ -1673,7 +1675,7 @@ footer.main-footer nav.footer-nav ul li a {
    color: black;
    text-decoration: none;
    transition: background-color 0.3s;
-   border: 1px solid #a9acd1;
+   border: 1px solid var(--color8);
    border-radius: 5px;
    text-align: center;
    display: flex;
@@ -1687,11 +1689,11 @@ footer.main-footer nav.footer-nav ul li a {
 .pagination a.active {
    background-color: var(--color1);
    color: white;
-   border: 1px solid #a9acd1;
+   border: 1px solid var(--color8);
 }
 
 .pagination a:hover:not(.active) {
-   background-color: #a9acd1;
+   background-color: var(--color8);
 }
 
 .pagination a:active:not(.active) {
@@ -1845,4 +1847,49 @@ footer.main-footer nav.footer-nav ul li a {
    gap: 20px;
 }
 
-/*----------------------------------------*/
+nav.desktop-nav ul.first-level > .active-link > a:after {
+   content: '';
+   position: absolute;
+   top: 65px;
+   left: 0;
+   width: 100%;
+   height: 2px;
+   opacity: 1;
+   -webkit-transition: all 0.2s ease-in-out;
+   transition: all 0.2s ease-in-out;
+   background-color: var(--color1);
+}
+
+header.main-header {
+   background-color: rgba(238, 130, 238, 0.5);
+   box-shadow: 0 1px 10px var(--color5);
+   height: 150px;
+   width: 100%;
+   margin-top: 0;
+   padding: 20px 0;
+
+   background: rgba(255, 255, 255, 0.7);
+}
+
+/*----------------FIXED-MENU-------------------*/
+
+header.main-header.fexed-menu > header.main-header {
+   position: fixed;
+   height: 50px;
+   width: 100%;
+   top: 0;
+   background-color: red;
+}
+
+.menu.fixed-menu .desktop-nav {
+   position: fixed;
+   top: -30px;
+   left: 50%;
+}
+
+.menu-icon.fixed-menu {
+   position: fixed;
+   top: -30px;
+   right: 15px;
+}
+/*---------------------------------------------*/
