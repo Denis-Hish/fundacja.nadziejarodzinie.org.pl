@@ -594,26 +594,55 @@ header.main-header .menu-icon .line:last-child {
    margin-bottom: 30px;
 }
 
-/* .contact-container:hover .contact-icon ion-icon,
-.contact-container:hover .contact-title {
-   color: var(--color3);
-} */
+.contact-container div {
+   text-align: center;
+}
 
-.contact {
+.contact-icon-wrapper {
+   display: flex;
+   gap: 10px;
+   margin-bottom: 20px;
+   transition: all 0.2s ease-in-out;
+}
+
+.contact-icon,
+.contact-icon ion-icon {
+   width: 40px;
+   margin: 0 auto;
+}
+
+.contact-icon-con,
+.contact-icon-con ion-icon {
+   width: 40px;
+}
+
+.contact-title {
+   font-size: 16px;
+}
+
+.contact-subtitle {
+   font-size: 14px;
+}
+
+.contact,
+.contact-adress {
    color: var(--color-text-1);
 }
 
-.contact a {
+.contact a,
+.contact-adress a {
    color: var(--color-text-1);
    transition: all 0.2s ease-in-out;
 }
 
-.contact a:hover {
+.contact a:hover,
+.contact-adress a:hover .contact-icon-wrapper {
    color: var(--color1);
    transform: translateY(-2px);
 }
 
-.contact a:active {
+.contact a:active,
+.contact-adress a:active {
    color: var(--color3);
    transform: translateY(2px);
 }
@@ -652,36 +681,6 @@ header.main-header .menu-icon .line:last-child {
 
 ion-icon {
    font-size: 30px;
-}
-
-.contact-container div {
-   text-align: center;
-}
-
-.contact-icon-wrapper {
-   display: flex;
-   gap: 10px;
-   margin-bottom: 20px;
-}
-
-.contact-icon,
-.contact-icon ion-icon {
-   width: 40px;
-   margin: 0 auto;
-}
-
-.contact-icon-con,
-.contact-icon-con ion-icon {
-   width: 40px;
-   /* margin: 0 auto; */
-}
-
-.contact-title {
-   font-size: 16px;
-}
-
-.contact-subtitle {
-   font-size: 14px;
 }
 
 /*footer*/
@@ -1742,7 +1741,8 @@ footer.main-footer nav.footer-nav ul li a {
    position: fixed;
    bottom: 120px;
    right: 30px;
-   transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+   transition: background-color 0.3s, opacity 0.5s, visibility 0.5s,
+      transform 0.2s;
    opacity: 0;
    visibility: hidden;
    z-index: 1000;
@@ -1759,9 +1759,11 @@ footer.main-footer nav.footer-nav ul li a {
 #button-up:hover {
    cursor: pointer;
    background-color: var(--color1);
+   transform: translateY(-2px);
 }
 #button-up:active {
    background-color: var(--color3);
+   transform: translateY(2px);
 }
 #button-up.show {
    opacity: 1;
