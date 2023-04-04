@@ -20,25 +20,58 @@ for (var i = 0; i < links.length; i++) {
 
 // sticky menu
 window.addEventListener('scroll', function () {
-   const header = document.querySelector('.main-header');
-   const menu = document.querySelector('.menu');
-   const menuIcon = this.document.querySelector('.menu-icon');
-
-   if (window.pageYOffset > 50) {
-      menu.classList.add('fixed-menu');
-      menuIcon.classList.add('fixed-menu');
+   if (window.pageYOffset >= 50) {
+      // document.querySelector('.menu').classList.add('fixed-menu');
+      document.querySelector('.menu').classList.add('opacity-50');
+      document.querySelector('.menu-icon').classList.add('fixed-menu');
    } else {
-      menu.classList.remove('fixed-menu');
-      menuIcon.classList.remove('fixed-menu');
+      // document.querySelector('.menu').classList.remove('fixed-menu');
+      document.querySelector('.menu').classList.remove('opacity-50');
+      document.querySelector('.menu-icon').classList.remove('fixed-menu');
    }
 
-   if (window.pageYOffset > 100) {
-      header.classList.add('fixed-menu');
+   if (window.pageYOffset >= 90) {
+      document.querySelector('.menu').classList.add('opacity-90');
    } else {
-      header.classList.remove('fixed-menu');
+      document.querySelector('.menu').classList.remove('opacity-90');
+   }
+
+   if (window.pageYOffset >= 100) {
+      document.querySelector('.menu').classList.add('fixed-menu');
+      document.querySelector('.main-header').classList.add('fixed-menu');
+   } else {
+      document.querySelector('.menu').classList.remove('fixed-menu');
+      document.querySelector('.main-header').classList.remove('fixed-menu');
    }
 });
 
 window.addEventListener('scroll', function () {
    console.log(window.scrollY);
 });
+
+// положение верхней части экрана
+const counterElement = document.querySelector('.counter');
+function updateCounter() {
+   counterElement.innerHTML = Math.round(window.scrollY) + ' px';
+}
+updateCounter();
+window.addEventListener('scroll', updateCounter);
+
+//----------------------------------------------------------//
+
+// add / delete opacity
+// window.addEventListener('scroll', function () {
+//    if (window.pageYOffset >= 90) {
+//       document.querySelector('.menu').style.opacity = 0;
+//    } else {
+//       document.querySelector('.menu').style.opacity = 1;
+//    }
+//    if (window.pageYOffset >= 100) {
+//       document.querySelector('.menu').style.opacity = 1;
+//    } else {
+//       document.querySelector('.menu').style.opacity = 0;
+//    }
+//    // if (window.pageYOffset < 90) {
+//    //    document.querySelector('.menu').style.opacity = 1;
+//    // }
+// });
