@@ -127,7 +127,7 @@ window.addEventListener('scroll', updateCounter);
 //----------------------------------------------------------//
 
 function onScroll() {
-   const sec = 1.5; // длительность анимации
+   const sec = 4.5; // длительность анимации
 
    const logoBig = document.querySelector('.logo-big');
    const logoSmall = document.querySelector('.logo-small');
@@ -138,6 +138,7 @@ function onScroll() {
 
    if (window.pageYOffset >= 0 && window.pageYOffset < 90) {
       menu.style.opacity = 1;
+      menu.style.transition = 'none'; //!!!!!!!!!
       // menu.style.transition = isScrollingUp
       //    ? ''
       //    : `opacity ${sec}s ease-in-out`;
@@ -149,6 +150,7 @@ function onScroll() {
       // menu.style.transition = isScrollingUp
       //    ? `opacity ${sec}s ease-in-out`
       //    : '';
+      menu.style.transition = `opacity ${sec}s ease-in-out`;
    }
 
    if (window.pageYOffset >= 100) {
