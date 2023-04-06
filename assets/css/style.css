@@ -497,10 +497,10 @@ nav.desktop-nav ul.first-level > li > ul.second-level > li > a:hover {
 
 /*mobile nav*/
 nav.mobile-nav {
-   height: 70vh;
+   height: 500px;
    width: 90vw;
    border-radius: 30px;
-   position: fixed;
+   position: absolute;
    top: 170px;
    left: 50%;
    transform: translateX(-50%);
@@ -1881,7 +1881,7 @@ header.main-header.fixed-menu {
 /* menu PC & mobile */
 .menu {
    /* opacity: 1; */
-   /* transition: all 1.5s ease-in-out; */
+   /* transition: opacity 1.5s ease-in-out; */
 }
 
 .menu.opacity-50 {
