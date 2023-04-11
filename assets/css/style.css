@@ -497,7 +497,7 @@ nav.desktop-nav ul.first-level > li > ul.second-level > li > a:hover {
 
 /*mobile nav*/
 nav.mobile-nav {
-   height: 400px;
+   height: 60vh;
    width: 90vw;
    border-radius: 30px;
    position: absolute;
@@ -507,6 +507,7 @@ nav.mobile-nav {
    display: none;
    background-color: rgba(96, 96, 110, 0.97);
    box-shadow: 0 0 10px var(--color5);
+   z-index: 100;
 }
 
 nav.mobile-nav > ul.first-level li {
@@ -547,6 +548,7 @@ header.main-header .menu-icon {
    cursor: pointer;
    margin-top: 41.5px; /* (100 - 17) / 2 (17px is the icon's height) */
    display: none;
+   z-index: 101;
 }
 header.main-header .menu-icon .line {
    height: 2.5px;
@@ -1999,4 +2001,27 @@ nav.mobile-nav.fixed-menu {
 .section-hero ion-icon {
    font-size: 56px;
    color: #5359a3;
+}
+
+/* ----------------------------------- */
+
+header.main-header-fixed {
+   position: fixed;
+   height: 50px;
+}
+
+.list-fixed {
+   transform: translateY(-50px);
+}
+
+.menu-icon-fixed {
+   transform: translateY(-50px);
+}
+
+.logo-small {
+   opacity: 0;
+}
+
+nav.mobile-nav-fixed {
+   transform: translate(-50%, -100px);
 }
