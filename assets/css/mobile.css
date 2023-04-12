@@ -232,3 +232,18 @@
       width: 1170px;
    }
 }
+
+@media (orientation: landscape) {
+   nav.mobile-nav {
+      height: 75vh;
+   }
+
+   nav.mobile-nav > ul.first-level li {
+      margin-bottom: 0;
+   }
+
+   nav.mobile-nav > ul.first-level > li a {
+      font-size: 18px;
+      height: 30px;
+   }
+}
