@@ -1,3 +1,7 @@
+AOS.init({
+   duration: 1000,
+});
+
 // current year for copyright block
 const currentYear = new Date().getFullYear();
 const yearSpan = document.querySelector('.current-year');
@@ -53,3 +57,5 @@ window.addEventListener('scroll', function () {
       logoSmall.style.opacity = '0';
    }
 });
+
+//----------------------------------------------------------------//

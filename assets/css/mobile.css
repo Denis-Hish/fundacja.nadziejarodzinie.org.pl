@@ -215,6 +215,16 @@
    .hero-section p {
       order: 1;
    }
+
+   .contact-container-nrk {
+      flex-direction: column;
+   }
+
+   .contact-container-nrk {
+      border: 0px solid #000;
+      border-radius: 0px;
+      padding: 0px;
+   }
 }
 
 @media (min-width: 768px) {
@@ -226,10 +236,18 @@
    .container-odd-even {
       width: 1060px;
    }
+
+   .nrk-icon {
+      margin: 0 auto;
+   }
 }
 @media (min-width: 1200px) {
    .container-odd-even {
       width: 1170px;
+   }
+
+   .nrk-icon {
+      margin: 0 10px;
    }
 }
 

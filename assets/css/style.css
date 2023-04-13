@@ -690,6 +690,31 @@ ion-icon {
    font-size: 30px;
 }
 
+/* NIP */
+
+.contact-container-nrk {
+   display: flex;
+   justify-content: space-between;
+   gap: 10px;
+   line-height: 30px;
+   margin-bottom: 30px;
+   border: 1px solid #000;
+   border-radius: 20px;
+   padding: 20px;
+}
+
+.nrk-nip {
+   display: flex;
+   align-items: center;
+   gap: 20px;
+}
+
+.nrk-line {
+   width: 1px;
+   height: auto;
+   background-color: #000;
+}
+
 /*footer*/
 footer.main-footer {
    padding: 50px 0;

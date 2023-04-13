@@ -16,9 +16,11 @@
    <!-- <link rel="stylesheet" href="assets/css/animate.css"> -->
    <link rel="stylesheet" href="assets/css/style.css">
    <link rel="stylesheet" href="assets/css/mobile.css">
+   <script defer src="assets/js/script.js"></script>
 
    <!-- AOS -->
    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
    <!-- UP BUTTON button-up -->
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -77,7 +79,7 @@
    <div class="container">
 
       <div class="hero-section">
-         <div class="section-hero section-1" data-aos="fade-up" data-aos-once="true">
+         <div class="section-hero section-1" data-aos="fade-up" data-aos-delay="500">
             <div>
                <ion-icon name="people-outline"></ion-icon>
             </div>
@@ -87,7 +89,7 @@
          <d1v class="row hero-section-image" data-aos="fade-up">
             <img src="assets/img/img000.jpg" alt="image">
          </d1v>
-         <div class="section-hero section-2" data-aos="fade-up">
+         <div class="section-hero section-2" data-aos="fade-up" data-aos-delay="500">
             <p>Poprawa funkcjonowania osób niepełnosprawnych poprzez zatrudnienie, rehabilitację, aktywizację społeczną
                i kulturalną, pomoc w życiu codziennym</p>
             <div>
@@ -102,7 +104,7 @@
 
    <div class="container">
 
-      <div class="t-container row wow fadeInUp">
+      <div class="t-container row" data-aos="fade-up">
          <div class="t-container-contecst">
             <div class="t-image">
                <img src="assets/img/img001.jpg" alt="">
@@ -130,7 +132,7 @@
          </div>
       </div>
 
-      <div class="t-container row wow fadeInUp">
+      <div class="t-container row" data-aos="fade-up">
          <div class="t-container-contecst">
             <div class="t-image">
                <img src="assets/img/img002.jpg" alt="">
@@ -164,7 +166,7 @@
          </div>
       </div>
 
-      <div class="t-container row wow fadeInUp">
+      <div class="t-container row" data-aos="fade-up">
          <div class="t-container-contecst">
             <div class="t-image">
                <img src="assets/img/img003.jpg" alt="">
@@ -192,7 +194,7 @@
 
    <section class="services mt-100 no-mb">
       <div class="contact-wrapper">
-         <div class="container contact wow fadeInUp">
+         <div class="container contact" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
             <div class="col2-small">
 
                <a href="https://goo.gl/maps/AF4rcuHXgF7iRZ2H8" target="_blank" rel="noopener noreferrer">
@@ -252,7 +254,7 @@
 
    <div class="copyright-bgc">
       <div class="container">
-         <div class="copyright wow fadeInUp">
+         <div class="copyright">
             © <span class="current-year">2023</span> Fundacja Nadzieja Rodzinie<br>
             <a href="assets/resource/Obowiazek_informacyjny.pdf" target="_blank">Obowiązek informacyjny</a>
          </div>
@@ -315,20 +317,9 @@
       });
    </script>
 
-   <script src="assets/js/script.js"></script>
    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
    <script src="assets/js/button-up.js"></script>
-
-   <!-- AOS -->
-   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-   <script>
-      AOS.init({
-         duration: 2000,
-         once: true,
-         delay: 1000,
-      });
-   </script>
 
 </body>
 

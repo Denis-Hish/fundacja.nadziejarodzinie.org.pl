@@ -3,20 +3,22 @@
 
 <head>
    <title>Post - Fundacja Nadzieja Rodzinie</title>
-   <!-- META TAGS -->
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png">
-   <!-- <meta name="author" content="Amine Akhouad">
-	<meta name="description" content="AKAD is a creative and modern template for digital agencies"> -->
 
    <!-- STYLES -->
    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
    <link rel="stylesheet" href="assets/css/ionicons.min.css">
    <link rel="stylesheet" href="assets/css/animsition.min.css">
-   <link rel="stylesheet" href="assets/css/animate.css">
+   <!-- <link rel="stylesheet" href="assets/css/animate.css"> -->
    <link rel="stylesheet" href="assets/css/style.css">
    <link rel="stylesheet" href="assets/css/mobile.css">
+   <script defer src="assets/js/script.js"></script>
+
+   <!-- AOS -->
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
    <!-- UP BUTTON button-up -->
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -60,7 +62,7 @@
    </header>
 
    <!-- HERO SECTION  -->
-   <div class="site-hero_2 site-hero_3 mb-50">
+   <div class="site-hero_2 site-hero_3 mb-50" data-aos="fade-up">
       <div class="page-title">
          <div class="big-title post-title montserrat-text uppercase border-bottom">Lorem ipsum dolor sit amet</div>
       </div>
@@ -68,12 +70,12 @@
 
    <div class="container">
       <div class="row">
-         <div class="post-section width-100 wow fadeInUp">
-            <div class="post-section-image image-left">
-               <img src="assets/img/post001.jpg" alt="">
+         <div class="post-section width-100">
+            <div class="post-section-image image-left" data-aos="fade-up">
+               <img src="assets/img/post001.jpg" alt="post image">
             </div>
             <div class="post-section-text">
-               <p class=" wow fadeInUp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat debitis facilis
+               <p data-aos="fade-up">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat debitis facilis
                   animi accusantium,
                   modi
                   aperiam unde nisi rem repellendus ex itaque, libero obcaecati dolore suscipit, eligendi cupiditate
@@ -96,13 +98,13 @@
                   obcaecati temporibus minus reiciendis nesciunt fuga voluptatibus in cupiditate et, perspiciatis culpa!
                   Corporis facere ipsam quasi a tempora fuga omnis illum!
                </p>
-               <p class=" wow fadeInUp">
+               <p data-aos="fade-up">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi esse provident impedit illum quam autem
                   quas repellat temporibus repudiandae, accusantium corrupti, hic quos laboriosam aspernatur illo
                   adipisci ipsa fuga architecto placeat blanditiis? Ipsam recusandae rem esse expedita harum distinctio.
                   Labore, dolore? Dolorum, maxime aliquid perferendis ducimus sequi vel dolorem iure.
                </p>
-               <p class=" wow fadeInUp">
+               <p data-aos="fade-up">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae similique, numquam perspiciatis
                   quae animi reiciendis ipsum architecto, porro iusto fugit, possimus nemo? Ea nemo eos, voluptatem
                   nesciunt pariatur dolorem voluptates nam inventore perspiciatis minima ut dolor odio deleniti tenetur
@@ -121,7 +123,7 @@
 
 
    <div class="contact-wrapper">
-      <div class="container contact wow fadeInUp">
+      <div class="container contact" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
 
          <div class="col2-small">
             <div class="contact-container">
@@ -179,7 +181,7 @@
 
    <div class="copyright-bgc">
       <div class="container">
-         <div class="copyright wow fadeInUp">
+         <div class="copyright">
             © <span class="current-year">2023</span> Fundacja Nadzieja Rodzinie<br>
             <a href="assets/resource/Obowiazek_informacyjny.pdf" target="_blank">Obowiązek informacyjny</a>
          </div>
@@ -194,11 +196,11 @@
    <!-- <script type="text/javascript" src="assets/js/smoothScroll.js"></script> -->
    <script type="text/javascript" src="assets/js/jquery.flexslider.js"></script>
    <script type="text/javascript" src="assets/js/jquery.animsition.min.js"></script>
-   <script type="text/javascript" src="assets/js/wow.min.js"></script>
+   <!-- <script type="text/javascript" src="assets/js/wow.min.js"></script> -->
    <script type="text/javascript" src="assets/js/main.js"></script>
    <script type="text/javascript">
       $(window).load(function () {
-         new WOW().init();
+         // new WOW().init();
          $(".testimonials").flexslider({
             directionNav: false,
             controlNav: false,
@@ -207,7 +209,6 @@
       });
    </script>
 
-   <script src="assets/js/script.js"></script>
    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
    <script src="assets/js/button-up.js"></script>
