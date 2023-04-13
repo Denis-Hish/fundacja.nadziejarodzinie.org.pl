@@ -13,9 +13,12 @@
    <link rel="stylesheet" href="assets/css/ionicons.min.css">
    <link rel="stylesheet" href="assets/css/flexslider.css">
    <link rel="stylesheet" href="assets/css/animsition.min.css">
-   <link rel="stylesheet" href="assets/css/animate.css">
+   <!-- <link rel="stylesheet" href="assets/css/animate.css"> -->
    <link rel="stylesheet" href="assets/css/style.css">
    <link rel="stylesheet" href="assets/css/mobile.css">
+
+   <!-- AOS -->
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
    <!-- UP BUTTON button-up -->
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -74,17 +77,17 @@
    <div class="container">
 
       <div class="hero-section">
-         <div class="section-hero section-1 wow fadeInUp">
+         <div class="section-hero section-1" data-aos="fade-up" data-aos-once="true">
             <div>
                <ion-icon name="people-outline"></ion-icon>
             </div>
             <p>Ochrona życia rodzinnego, profilaktyki społecznej, wspierania osób bezrobotnych ze szczególnym
                uwzględnieniem młodzieży zagrożonej wykluczeniem społecznym</p>
          </div>
-         <d1v class="row hero-section-image wow fadeInUp">
-            <img src="assets/img/img000-1.jpg" alt="image">
+         <d1v class="row hero-section-image" data-aos="fade-up">
+            <img src="assets/img/img000.jpg" alt="image">
          </d1v>
-         <div class="section-hero section-2 wow fadeInUp">
+         <div class="section-hero section-2" data-aos="fade-up">
             <p>Poprawa funkcjonowania osób niepełnosprawnych poprzez zatrudnienie, rehabilitację, aktywizację społeczną
                i kulturalną, pomoc w życiu codziennym</p>
             <div>
@@ -269,12 +272,12 @@
    <script type="text/javascript" src="assets/js/jquery.flexslider.js"></script>
    <!-- <script type="text/javascript" src="assets/js/smoothScroll.js"></script> -->
    <script type="text/javascript" src="assets/js/jquery.animsition.min.js"></script>
-   <script type="text/javascript" src="assets/js/wow.min.js"></script>
+   <!-- <script type="text/javascript" src="assets/js/wow.min.js"></script> -->
    <script type="text/javascript" src="assets/js/main.js"></script>
 
    <script type="text/javascript" charset="utf-8">
       $(window).load(function () {
-         new WOW().init();
+         // new WOW().init();
 
          // initialise flexslider
          $('.site-hero').flexslider({
@@ -316,6 +319,16 @@
    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
    <script src="assets/js/button-up.js"></script>
+
+   <!-- AOS -->
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script>
+      AOS.init({
+         duration: 2000,
+         once: true,
+         delay: 1000,
+      });
+   </script>
 
 </body>
 
