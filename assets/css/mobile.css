@@ -224,6 +224,12 @@
       border: 0px solid #000;
       border-radius: 0px;
       padding: 0px;
+      gap: 0;
+   }
+
+   .nrk-nip,
+   .contact-adress {
+      margin-bottom: 50px;
    }
 }
 
