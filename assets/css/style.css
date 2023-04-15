@@ -1650,6 +1650,8 @@ footer.main-footer nav.footer-nav ul li a {
 .announcements-container-card-text h4 {
    padding: 0 20px;
    margin: 0;
+   height: 90px;
+   overflow: hidden;
 }
 
 .announcements-container-card-image {
