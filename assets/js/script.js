@@ -57,5 +57,46 @@ window.addEventListener('scroll', function () {
       logoSmall.style.opacity = '0';
    }
 });
+//----------------------SYMBOLS QUANTITY--------------------------//
+// function truncateText(selector) {
+//    const symbolsQuantity = 120;
+
+//    const elements = document.querySelectorAll(selector);
+//    elements.forEach(element => {
+//       const text = element.textContent;
+//       if (text.length > symbolsQuantity) {
+//          const truncatedText = text.substring(0, symbolsQuantity) + '...';
+//          element.textContent = truncatedText;
+//       }
+//    });
+// }
+
+// truncateText('.announcements-container-card-text h4');
+
+//----------------------------------------------------------------//
+function truncateOrExpandText() {
+   const elements = document.querySelectorAll(
+      '.announcements-container-card-text h4'
+   );
+   elements.forEach(element => {
+      const maxHeight = parseInt(window.getComputedStyle(element).height);
+      const lineHeight = parseInt(window.getComputedStyle(element).lineHeight);
+      const text = element.textContent;
+      let result = text;
+      if (maxHeight < lineHeight * 2) {
+         // Если текст в блоке помещается без обрезки, добавляем оригинальный текст и выходим из функции
+         element.textContent = text;
+         return;
+      }
+      // Иначе начинаем обрезку текста
+      while (element.scrollHeight > maxHeight) {
+         result = result.slice(0, -1);
+         element.textContent = `${result}...`;
+      }
+   });
+}
+
+window.addEventListener('load', truncateOrExpandText);
+window.addEventListener('resize', truncateOrExpandText);
 
 //----------------------------------------------------------------//
