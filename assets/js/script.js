@@ -73,30 +73,30 @@ window.addEventListener('scroll', function () {
 
 // truncateText('.announcements-container-card-text h4');
 
-//----------------------------------------------------------------//
-function truncateOrExpandText() {
-   const elements = document.querySelectorAll(
-      '.announcements-container-card-text h4'
-   );
-   elements.forEach(element => {
-      const maxHeight = parseInt(window.getComputedStyle(element).height);
-      const lineHeight = parseInt(window.getComputedStyle(element).lineHeight);
-      const text = element.textContent;
-      let result = text;
-      if (maxHeight < lineHeight * 2) {
-         // Если текст в блоке помещается без обрезки, добавляем оригинальный текст и выходим из функции
-         element.textContent = text;
-         return;
-      }
-      // Иначе начинаем обрезку текста
-      while (element.scrollHeight > maxHeight) {
-         result = result.slice(0, -1);
-         element.textContent = `${result}...`;
-      }
-   });
-}
+//-----------------------TRUNCATE TEXT-----------------------------//
+// function truncateOrExpandText() {
+//    const elements = document.querySelectorAll(
+//       '.announcements-container-card-text h4'
+//    );
+//    elements.forEach(element => {
+//       const maxHeight = parseInt(window.getComputedStyle(element).height);
+//       const lineHeight = parseInt(window.getComputedStyle(element).lineHeight);
+//       const text = element.textContent;
+//       let result = text;
+//       if (maxHeight < lineHeight * 2) {
+//          // Если текст в блоке помещается без обрезки, добавляем оригинальный текст и выходим из функции
+//          element.textContent = text;
+//          return;
+//       }
+//       // Иначе начинаем обрезку текста
+//       while (element.scrollHeight > maxHeight) {
+//          result = result.slice(0, -1);
+//          element.textContent = `${result}...`;
+//       }
+//    });
+// }
 
-window.addEventListener('load', truncateOrExpandText);
-window.addEventListener('resize', truncateOrExpandText);
+// window.addEventListener('load', truncateOrExpandText);
+// window.addEventListener('resize', truncateOrExpandText);
 
 //----------------------------------------------------------------//
